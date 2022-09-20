@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Dashboard Barbershop App</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description"
+		content="Dashboard Barbershop App é uma aplicação para gerenciamento do aplicativo de agendamentos da barbershop app" />
+	<meta name="keywords" content="Dashboard Barbershop App" />
+	<meta name="author" content="Luis Santos" />
+
+	<!-- Favicon icon -->
+	<link rel="icon" href="../assets/images/icon/favicon.ico" type="image/x-icon">
+
+	<!-- font css -->
+	<link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css">
+	<link rel="stylesheet" href="../assets/fonts/feather.css">
+	<link rel="stylesheet" href="../assets/fonts/fontawesome.css">
+	<link rel="stylesheet" href="../assets/fonts/material.css">
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="../assets/css/style.css" id="main-style-link">
+	<link rel="stylesheet" href="../assets/css/customizer.css">
+	<link rel="stylesheet" href="../assets/css/plugins/bootstrap-switch-button.min.css">
+
+	<link rel="stylesheet" href="../assets/css/layout-creative.css">
+</head>
+
+<body class="creative-layout ">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ Mobile header ] start -->
+	<div class="pc-mob-header pc-header">
+		<div class="pcm-logo">
+			<img src="../assets/images/logo/logo.png" alt="" class="logo logo-lg">
+		</div>
+		<div class="pcm-toolbar">
+			<a href="#!" class="pc-head-link" id="mobile-collapse">
+				<div class="hamburger hamburger--arrowturn">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<a href="#!" class="pc-head-link" id="headerdrp-collapse">
+				<i data-feather="align-right"></i>
+			</a>
+			<a href="#!" class="pc-head-link" id="header-collapse">
+				<i data-feather="more-vertical"></i>
+			</a>
+		</div>
+	</div>
+	<!-- [ Mobile header ] End -->
+
+	<!-- [ Navigation menu ] start -->
+	<nav class="pc-sidebar light-sidebar">
+		<div class="navbar-wrapper">
+			<div class="m-header">
+				<a href="index.html" class="b-brand">
+					<!-- ========   change logo   ============ -->
+					<img src="../assets/images/logo/logo-dark.png" alt="" class="logo logo-lg">
+				</a>
+			</div>
+			<div class="navbar-content">
+				<ul class="pc-navbar">
+					<li class="pc-item pc-caption">
+						<label>CONTROLES</label>
+						<span>Indices Analíticos</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu active">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">donut_small</i></span><span
+								class="pc-mtext">Controle</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item active"><a class="pc-link" href="index.html">Indices Gerais</a></li>
+							<li class="pc-item"><a class="pc-link" href="dashboard-analytics.html">Indices
+									Financeiro</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>GERENCIAMENTO</label>
+						<span>Gerenciamento principal</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">date_range</i></span><span
+								class="pc-mtext">Agenda</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="open-book.html">Abrir</a></li>
+							<li class="pc-item"><a class="pc-link" href="edit-book.html">Editar</a></li>
+							<li class="pc-item"><a class="pc-link" href="follow-up-book.html">Acompanhar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">book</i></span><span
+								class="pc-mtext">Agendamentos</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Gerenciar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">qr_code_2</i></span><span
+								class="pc-mtext">Cupons</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Validar Cupons</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">speaker_notes</i></span><span
+								class="pc-mtext">Notificações</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Enviar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Gerenciar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>CADASTROS</label>
+						<span>Cadastros da Aplicação</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">supervised_user_circle</i></span><span
+								class="pc-mtext">Usuários</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Gerenciar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">content_cut</i></span><span
+								class="pc-mtext">Profissionais</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">map</i></span><span
+								class="pc-mtext">Locais</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">list_alt</i></span><span
+								class="pc-mtext">Portifólio</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">text_snippet</i></span><span class="pc-mtext">Termos
+								e Condições</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Atualizar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>RELATÓRIOS</label>
+						<span>Relatórios Análise</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">analytics</i></span><span
+								class="pc-mtext">Relatórios</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cortes Mensais</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>CONFIGURAÇÕES</label>
+						<span>Configurações de Administração</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">account_box</i></span><span
+								class="pc-mtext">Usuários
+								Sistema</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+
+	<!-- [ Header ] start -->
+	<header class="pc-header ">
+		<div class="header-wrapper">
+			<div class="me-auto pc-mob-drp">
+				<h1></h1>
+				<!--[ Status Open or Close ]-->
+				<!-- TODO -->
+				<div>
+					<input type="checkbox" data-toggle="switchbutton" checked data-onlabel="Aberto"
+						data-offlabel="Fechado" data-onstyle="success" data-offstyle="danger">
+				</div>
+
+				<div>
+					<a href=""></a>
+				</div>
+
+			</div>
+
+			<div class="ms-auto">
+				<ul class="list-unstyled">
+					<li class="dropdown pc-h-item">
+						<!-- TODO -->
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+							role="button" aria-haspopup="false" aria-expanded="false">
+							<img src="../assets/images/user/avatar.jpg" alt="user-image" class="user-avtar">
+							<span>
+								<span class="user-name">Luis Santos</span>
+								<span class="user-desc">Administrator</span>
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+							<div class=" dropdown-header">
+								<h5 class="text-overflow m-0"><span class="badge bg-light-success">Ativo</span></h5>
+							</div>
+
+							<a href="auth-signin-3.html" class="dropdown-item">
+								<i class="material-icons-two-tone">arrow_back</i>
+								<span>Sair</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+	<!-- [ Header ] end -->
+
+	<!-- [ Main Content ] start -->
+	<div class="pc-container">
+		<!-- [ breadcrumb ] start -->
+		<div class="page-header">
+			<div class="page-block">
+				<div class="row align-items-center">
+					<div class="col-md-8">
+						<div class="page-header-title">
+							<h5>Indices Gerais</h5>
+						</div>
+						<ul class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Controle</a></li>
+							<li class="breadcrumb-item">Indices Gerais</li>
+						</ul>
+					</div>
+					<div class="col-md-4 text-md-end">
+						<button class="btn btn-sm btn-success rounded-pill" type="button">Atualizar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- [ breadcrumb ] end -->
+
+		<div class="pcoded-content">
+			<!-- [ Main Content ] start -->
+			<div class="row">
+
+			</div>
+			<!-- [ Main Content ] end -->
+		</div>
+	</div>
+	<!-- [ Main Content ] end -->
+
+	<!-- Required Js -->
+	<script src="../assets/js/plugins/popper.min.js"></script>
+	<script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+	<script src="../assets/js/plugins/bootstrap.min.js"></script>
+	<script src="../assets/js/plugins/feather.min.js"></script>
+	<script src="../assets/js/pcoded.js"></script>
+	<script src="../assets/js/plugins/bootstrap-switch-button.min.js"></script>
+
+	<script>
+		(function () {
+			var switch_event = document.querySelector("#switch_event");
+
+			switch_event.addEventListener('change', function () {
+				if (switch_event.checked) {
+					document.querySelector("#console_event").innerHTML = "Switch Button Checked";
+				} else {
+					document.querySelector("#console_event").innerHTML = "Switch Button Unchecked";
+				}
+			});
+		})();
+	</script>
+
+	<script>
+		feather.replace();
+		var pctoggle = document.querySelector("#pct-toggler");
+		if (pctoggle) {
+			pctoggle.addEventListener('click', function () {
+				if (!document.querySelector(".pct-customizer").classList.contains('active')) {
+					document.querySelector(".pct-customizer").classList.add("active");
+				} else {
+					document.querySelector(".pct-customizer").classList.remove("active");
+				}
+			});
+		}
+
+		var custsidebrand = document.querySelector("#cust-sidebrand");
+		custsidebrand.addEventListener('click', function () {
+			if (custsidebrand.checked) {
+				document.querySelector(".m-header").classList.add("bg-dark");
+				document.querySelector(".theme-color.brand-color").classList.remove("d-none");
+			} else {
+				removeClassByPrefix(document.querySelector(".m-header"), 'bg-');
+				// document.querySelector(".m-header > .b-brand > .logo-lg").setAttribute('src', '../assets/images/logo-dark.svg');
+				document.querySelector(".theme-color.brand-color").classList.add("d-none");
+			}
+		});
+
+
+		var brandcolor = document.querySelectorAll(".brand-color > a");
+		for (var t = 0; t < brandcolor.length; t++) {
+			var c = brandcolor[t];
+			c.addEventListener('click', function (event) {
+				var targetElement = event.target;
+				if (targetElement.tagName == "SPAN") {
+					targetElement = targetElement.parentNode;
+				}
+				var temp = targetElement.getAttribute('data-value');
+				if (temp == "bg-default") {
+					removeClassByPrefix(document.querySelector(".m-header"), 'bg-');
+				} else {
+					removeClassByPrefix(document.querySelector(".m-header"), 'bg-');
+					document.querySelector(".m-header > .b-brand > .logo-lg").setAttribute('src', 'https://dashboardkit.io/bootstrap/assets/images/logo.svg');
+					document.querySelector(".m-header").classList.add(temp);
+				}
+			});
+		}
+
+
+		var headercolor = document.querySelectorAll(".header-color > a");
+		for (var h = 0; h < headercolor.length; h++) {
+			var c = headercolor[h];
+
+			c.addEventListener('click', function (event) {
+				var targetElement = event.target;
+				if (targetElement.tagName == "SPAN") {
+					targetElement = targetElement.parentNode;
+				}
+				var temp = targetElement.getAttribute('data-value');
+				if (temp == "bg-default") {
+					removeClassByPrefix(document.querySelector(".pc-header:not(.pc-mob-header)"), 'bg-');
+				} else {
+					removeClassByPrefix(document.querySelector(".pc-header:not(.pc-mob-header)"), 'bg-');
+					document.querySelector(".pc-header:not(.pc-mob-header)").classList.add(temp);
+				}
+			});
+		}
+
+
+		var custside = document.querySelector("#cust-sidebar");
+		custside.addEventListener('click', function () {
+			if (custside.checked) {
+				document.querySelector(".pc-sidebar").classList.add("light-sidebar");
+				// document.querySelector(".pc-horizontal .topbar").classList.add("light-sidebar");
+			} else {
+				document.querySelector(".pc-sidebar").classList.remove("light-sidebar");
+				// document.querySelector(".pc-horizontal .topbar").classList.remove("light-sidebar");
+			}
+		});
+
+
+		var custdarklayout = document.querySelector("#cust-darklayout");
+		custdarklayout.addEventListener('click', function () {
+			if (custdarklayout.checked) {
+				document.querySelector("#main-style-link").setAttribute('href', '../assets/css/style-dark.css');
+			} else {
+				document.querySelector("#main-style-link").setAttribute('href', '../assets/css/style.css');
+			}
+		});
+		function removeClassByPrefix(node, prefix) {
+			for (let i = 0; i < node.classList.length; i++) {
+				let value = node.classList[i];
+				if (value.startsWith(prefix)) {
+					node.classList.remove(value);
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>

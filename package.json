@@ -1,0 +1,21 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "Barbershop Dashboard Application Beta",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "next dev"
+  },
+  "author": "Luis Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.0"
+  },
+  "dependencies": {
+    "firebase": "^9.9.1",
+    "jquery": "^3.6.0",
+    "next": "^12.2.3"
+  },
+  "keywords": []
+}

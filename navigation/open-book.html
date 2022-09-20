@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Dashboard Barbershop App</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description"
+		content="Dashboard Barbershop App é uma aplicação para gerenciamento do aplicativo de agendamentos da barbershop app" />
+	<meta name="keywords" content="Dashboard Barbershop App" />
+	<meta name="author" content="Luis Santos" />
+
+	<!-- Favicon icon -->
+	<link rel="icon" href="../assets/images/icon/favicon.ico" type="image/x-icon">
+
+	<!-- font css -->
+	<link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css">
+	<link rel="stylesheet" href="../assets/fonts/feather.css">
+	<link rel="stylesheet" href="../assets/fonts/fontawesome.css">
+	<link rel="stylesheet" href="../assets/fonts/material.css">
+
+	<!-- Required Jquery -->
+	<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="../assets/css/style.css" id="main-style-link">
+	<link rel="stylesheet" href="../assets/css/customizer.css">
+
+	<link rel="stylesheet" href="../assets/css/plugins/datepicker-bs5.min.css">
+	<link rel="stylesheet" href="../assets/css/plugins/bootstrap-switch-button.min.css">
+
+	<link rel="stylesheet" href="../assets/css/layout-creative.css">
+</head>
+
+<body class="creative-layout ">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ Mobile header ] start -->
+	<div class="pc-mob-header pc-header">
+		<div class="pcm-logo">
+			<img src="../assets/images/logo/logo.png" alt="" class="logo logo-lg">
+		</div>
+		<div class="pcm-toolbar">
+			<a href="#!" class="pc-head-link" id="mobile-collapse">
+				<div class="hamburger hamburger--arrowturn">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<a href="#!" class="pc-head-link" id="headerdrp-collapse">
+				<i data-feather="align-right"></i>
+			</a>
+			<a href="#!" class="pc-head-link" id="header-collapse">
+				<i data-feather="more-vertical"></i>
+			</a>
+		</div>
+	</div>
+	<!-- [ Mobile header ] End -->
+
+	<!-- [ Navigation menu ] start -->
+	<nav class="pc-sidebar light-sidebar">
+		<div class="navbar-wrapper">
+			<div class="m-header">
+				<a href="index.html" class="b-brand">
+					<!-- ========   change logo   ============ -->
+					<img src="../assets/images/logo/logo-dark.png" alt="" class="logo logo-lg">
+				</a>
+			</div>
+			<div class="navbar-content">
+				<ul class="pc-navbar">
+					<li class="pc-item pc-caption">
+						<label>CONTROLES</label>
+						<span>Indices Analíticos</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">donut_small</i></span><span
+								class="pc-mtext">Controle</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Indices Gerais</a></li>
+							<li class="pc-item"><a class="pc-link" href="dashboard-analytics.html">Indices
+									Financeiro</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>GERENCIAMENTO</label>
+						<span>Gerenciamento principal</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu active">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">date_range</i></span><span
+								class="pc-mtext">Agenda</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item active"><a class="pc-link" href="open-book.html">Abrir</a></li>
+							<li class="pc-item"><a class="pc-link" href="edit-book.html">Editar</a></li>
+							<li class="pc-item"><a class="pc-link" href="follow-up-book.html">Acompanhar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">book</i></span><span
+								class="pc-mtext">Agendamentos</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Gerenciar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">qr_code_2</i></span><span
+								class="pc-mtext">Cupons</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Validar Cupons</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">speaker_notes</i></span><span
+								class="pc-mtext">Notificações</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Enviar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Gerenciar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>CADASTROS</label>
+						<span>Cadastros da Aplicação</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">supervised_user_circle</i></span><span
+								class="pc-mtext">Usuários</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Gerenciar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">content_cut</i></span><span
+								class="pc-mtext">Profissionais</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">map</i></span><span
+								class="pc-mtext">Locais</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">list_alt</i></span><span
+								class="pc-mtext">Portifólio</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">text_snippet</i></span><span class="pc-mtext">Termos
+								e Condições</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Atualizar</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>RELATÓRIOS</label>
+						<span>Relatórios Análise</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">analytics</i></span><span
+								class="pc-mtext">Relatórios</span><span class="pc-arrow"><i
+									data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cortes Mensais</a></li>
+						</ul>
+					</li>
+
+					<li class="pc-item pc-caption">
+						<label>CONFIGURAÇÕES</label>
+						<span>Configurações de Administração</span>
+					</li>
+
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link "><span class="pc-micon"><i
+									class="material-icons-two-tone">account_box</i></span><span
+								class="pc-mtext">Usuários
+								Sistema</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="index.html">Cadastrar</a></li>
+							<li class="pc-item"><a class="pc-link" href="index.html">Editar</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+
+	<!-- [ Header ] start -->
+	<header class="pc-header ">
+		<div class="header-wrapper">
+			<div class="ms-auto">
+				<ul class="list-unstyled">
+					<li class="dropdown pc-h-item">
+						<!-- TODO -->
+						<div>
+							<input type="checkbox" data-toggle="switchbutton" checked data-onlabel="Aberto"
+								data-offlabel="Fechado" data-onstyle="success" data-offstyle="danger" id="switch_event">
+						</div>
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+							role="button" aria-haspopup="false" aria-expanded="false">
+							<!--img src="../assets/images/user/avatar.jpg" alt="user-image" class="user-avtar"-->
+							<span>
+								<span class="user-name">Barbearia Real</span>
+								<span class="user-desc">Endereço: Avenida Paulo dos Reis Junqueira, 377, Mogi Mirim -
+									SP</span>
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+							<div class=" dropdown-header">
+								<h5 class="text-overflow m-0">Alternar Local</h5>
+							</div>
+
+							<a href="auth-signin-3.html" class="dropdown-item">
+								<i class="material-icons-two-tone">arrow_back</i>
+								<span>Sair</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="ms-auto">
+				<ul class="list-unstyled">
+					<li class="dropdown pc-h-item">
+						<!-- TODO -->
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+							role="button" aria-haspopup="false" aria-expanded="false">
+							<img src="../assets/images/user/avatar.jpg" alt="user-image" class="user-avtar">
+							<span>
+								<span class="user-name">Luis Santos</span>
+								<span class="user-desc">Administrator</span>
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+							<div class=" dropdown-header">
+								<h5 class="text-overflow m-0"><span class="badge bg-light-success">Ativo</span></h5>
+							</div>
+
+							<a href="auth-signin-3.html" class="dropdown-item">
+								<i class="material-icons-two-tone">arrow_back</i>
+								<span>Sair</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+	<!-- [ Header ] end -->
+
+	<!-- [ Main Content ] start -->
+	<section class="pc-container">
+		<div class="pcoded-content">
+			<!-- [ breadcrumb ] start -->
+			<div class="page-header">
+				<div class="page-block">
+					<div class="row align-items-center">
+						<div class="col-md-12">
+							<div class="page-header-title">
+								<h5 class="m-b-10">Abrir Agenda</h5>
+							</div>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="open-book.html">Agenda</a></li>
+								<li class="breadcrumb-item"><a href="#!">Abrir Agenda</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [ breadcrumb ] end -->
+			<!-- [ Main Content ] start -->
+			<div class="row">
+				<!-- [ form-element ] start -->
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h5>Abrir Agenda (por dia)</h5>
+						</div>
+						<div class="card-body">
+							<form class="validate-me" id="diary-form" data-validate>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Local</label>
+									<div class="col-lg-7">
+										<select class="form-control" name="select-local-diary" id="select-local-diary"
+											required>
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Profissional</label>
+									<div class="col-lg-7">
+										<select class="form-control" name="select-pro-diary" id="select-pro-diary"
+											required>
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Padrão</label>
+									<div class="col-lg-7">
+										<select class="form-control" name="select-pattern-diary"
+											id="select-pattern-diary" required>
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Data</label>
+									<div class="col-lg-7 col-md-9 col-sm-12">
+										<input type="text" class="form-control" id="pc-datepicker-1"
+											name="input-unique-date" placeholder="Selecione uma data" required />
+									</div>
+								</div>
+
+								<div class="text-end">
+									<button type="submit" class="btn btn-primary"><i class="me-2"
+											data-feather="calendar" id="btn-open-diary-book"></i>Abrir Agenda</button>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-header">
+							<h5>Abrir Agenda (por período)</h5>
+						</div>
+						<div class="card-body">
+							<form class="validate-me" id="period-form" data-validate>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Local</label>
+									<div class="col-lg-7">
+										<select class="form-control" name="select-local-period" id="select-local-period"
+											required>
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Profissional</label>
+									<div class="col-lg-7">
+										<select class="form-control" name="select-pro-period" id="select-pro-period"
+											required>
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Padrão</label>
+									<div class="col-lg-7">
+										<select class="form-control" name="select-pattern-period"
+											id="select-pattern-period" required>
+											<option></option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-3 col-sm-12 text-lg-start">Período</label>
+									<div class="col-lg-8 col-md-9 col-sm-9">
+										<div class="input-daterange input-group" id="pc-datepicker-5">
+											<input type="text" class="form-control text-left" placeholder="Data Inicial"
+												name="range-start" id="start-date" required>
+											<span class="input-group-text">a</span>
+											<input type="text" class="form-control text-end" placeholder="Data Final"
+												name="range-end" id="end-date" required />
+										</div>
+									</div>
+								</div>
+
+								<div class="text-end">
+									<button type="submit" class="btn btn-primary">
+										<i class="me-2" data-feather="calendar" id="btn-open-period-book"></i>Abrir
+										Agenda</button>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- [ form-element ] end -->
+			</div>
+			<!-- [ Main Content ] end -->
+		</div>
+	</section>
+	<!-- [ Main Content ] end -->
+
+	<!--begin::Modal-->
+	<div class="modal fade" id="pc-datepicker-modal" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Bootstrap Date Picker Examples</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					</button>
+				</div>
+				<form class="pc-form">
+					<div class="modal-body">
+						<div class="form-group row">
+							<label class="col-form-label col-lg-3 col-sm-12 text-lg-end">Simple Setup</label>
+							<div class="col-lg-9 col-sm-12">
+								<input type="text" class="form-control" id="pc-datepicker-1_modal"
+									placeholder="Select date" />
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-form-label col-lg-3 col-sm-12 text-lg-end">With Input Group</label>
+							<div class="col-lg-9 col-sm-12">
+								<div class="input-group date">
+									<input type="text" class="form-control" placeholder="Select date"
+										id="pc-datepicker-2_modal" />
+									<span class="input-group-text">
+										<i class="feather icon-calendar"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+						<button type="button" class="btn btn-secondary">Selecionar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--end::Modal-->
+
+	<!-- Required Js -->
+	<script src="../assets/js/plugins/popper.min.js"></script>
+	<script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+	<script src="../assets/js/plugins/bootstrap.min.js"></script>
+	<script src="../assets/js/plugins/feather.min.js"></script>
+	<script src="../assets/js/pcoded.js"></script>
+
+	<!-- switched-button Js -->
+	<script src="../assets/js/plugins/bootstrap-switch-button.min.js"></script>
+	<script src="../assets/js/pages/switch-button.js"></script>
+
+	<!-- jquery-validation Js -->
+	<script src="../assets/js/plugins/bouncer.min.js"></script>
+	<script src="../assets/js/pages/form-validation.js"></script>
+
+	<!-- bootstrap-datepicker -->
+	<script src="../assets/js/plugins/datepicker-full.min.js"></script>
+	<script src="../assets/js/pages/datepicker-setup.js"></script>
+
+	<!-- custom-layout -->
+	<script src="../assets/js/pages/custom-layout-config.js"></script>
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+	<!-- Database-Functions -->
+	<script src="open-book.js"></script>
+
+
+</body>
+
+</html>
